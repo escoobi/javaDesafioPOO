@@ -15,7 +15,12 @@ public class Main {
         Curso curso1 = new Curso();
         curso1.setTitulo("Curso Python ");
         curso1.setDescricao("Descrição curso Python ");
-        curso1.setCargaHoraria(18);
+        curso1.setCargaHoraria(6);
+
+        Curso curso2 = new Curso();
+        curso2.setTitulo("Curso Git ");
+        curso2.setDescricao("Descrição curso Git ");
+        curso2.setCargaHoraria(5);
 
 
         Mentoria mentoria = new Mentoria();
@@ -28,6 +33,7 @@ public class Main {
         bootcamp.setDescricao("Descrição Bootcamp Java Developer");
         bootcamp.getConteudoSet().add(curso);
         bootcamp.getConteudoSet().add(curso1);
+        bootcamp.getConteudoSet().add(curso2);
         bootcamp.getConteudoSet().add(mentoria);
 
 
@@ -39,6 +45,7 @@ public class Main {
         dev.progredir();
         System.out.println(dev.getConteudoConcluidos());
         System.out.println(dev.calcularXp());
+        System.out.println(dev.getConteudoInscritos());
 
 
 
@@ -54,6 +61,7 @@ public class Main {
         dev1.progredir();
         System.out.println(dev1.getConteudoConcluidos());
         System.out.println(dev1.calcularXp());
+        System.out.println(dev1.getConteudoInscritos());
 
 
     }
